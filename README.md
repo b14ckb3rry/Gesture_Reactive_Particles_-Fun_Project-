@@ -5,7 +5,8 @@ An immersive, real-time **gesture-controlled particle system** built with **Thre
 This project blends **computer vision**, **procedural geometry**, and **interactive graphics** to create a living particle sculpture that reacts to human motion.
 
 ---
-- **Visit Live Website :** <a href="https://b14ckb3rry.github.io/Gesture_Reactive_Particles_-Fun_Project-/" target="_blank">Click Here</a>
+- ## Visit Live Website :
+- [Click Here](https://b14ckb3rry.github.io/Gesture_Reactive_Particles_-Fun_Project-/")
 ## 🚀 Features
 
 - **Real-time Hand Tracking**
