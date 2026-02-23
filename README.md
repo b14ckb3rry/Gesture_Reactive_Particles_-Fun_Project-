@@ -6,7 +6,7 @@ This project blends **computer vision**, **procedural geometry**, and **interact
 
 ---
 
-Visit Live Website : [Click Here] (https://b14ckb3rry.github.io/Gesture_Reactive_Particles_-Fun_Project-/)
+Visit Live Website : [Click Here](https://b14ckb3rry.github.io/Gesture_Reactive_Particles_-Fun_Project-/)
 ## 🚀 Features
 
 - **Real-time Hand Tracking**
