@@ -164,11 +164,9 @@
                     
                     // Add volume
                     let z = (Math.random() - 0.5) * 4;
-                    
                     // Randomize slightly to fill volume
                     x += (Math.random()-0.5) * 0.5;
                     y += (Math.random()-0.5) * 0.5;
-
                     arr.push(x, y, z);
                 }
                 return arr;
@@ -194,7 +192,6 @@
                 // 60% Planet, 40% Rings
                 const planetCount = Math.floor(PARTICLE_COUNT * 0.6);
                 const ringCount = PARTICLE_COUNT - planetCount;
-                
                 // Planet
                 for(let i=0; i<planetCount; i++) {
                     const radius = 3;
@@ -206,25 +203,21 @@
                         radius * Math.cos(phi)
                     );
                 }
-                
                 // Rings
                 for(let i=0; i<ringCount; i++) {
                     const inner = 4.5;
                     const outer = 8;
                     const r = inner + Math.random() * (outer - inner);
                     const theta = Math.random() * Math.PI * 2;
-                    
                     // Tilt rings
                     const x0 = r * Math.cos(theta);
                     const z0 = r * Math.sin(theta);
                     const y0 = (Math.random()-0.5) * 0.2; // Thin
-                    
                     // Rotate around X axis for tilt
                     const tilt = Math.PI / 6;
                     const x = x0;
                     const y = y0 * Math.cos(tilt) - z0 * Math.sin(tilt);
                     const z = y0 * Math.sin(tilt) + z0 * Math.cos(tilt);
-                    
                     arr.push(x, y, z);
                 }
                 return arr;
@@ -236,11 +229,9 @@
                     const radius = Math.random() * 10;
                     const theta = Math.random() * Math.PI * 2;
                     const phi = Math.acos((Math.random() * 2) - 1);
-                    
                     // Concentrate some in center, some outer (trails)
                     // Use a power to cluster
                     const dist = Math.pow(Math.random(), 0.5) * 8;
-                    
                     arr.push(
                         dist * Math.sin(phi) * Math.cos(theta),
                         dist * Math.sin(phi) * Math.sin(theta),
@@ -280,7 +271,6 @@
                 while(arr.length < PARTICLE_COUNT * 3) {
                      arr.push(0,-3.5,0);
                 }
-                
                 return arr;
             }
         };
@@ -544,3 +534,4 @@
     </script>
 </body>
 </html>
+
